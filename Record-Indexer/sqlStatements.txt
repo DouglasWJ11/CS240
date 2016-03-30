@@ -1,0 +1,109 @@
+drop table users;
+drop table image;
+drop table projects;
+drop table fields;
+drop table indexedData;
+
+create table users
+(
+	id integer not null primary key autoincrement,
+	firstName varchar(255) not null,
+	lastName varchar(255) not null,
+	username varchar(255) not null,
+	password varchar(255) not null,
+	emailaddress varchar(255) not null,
+	records_indexed integer not null,
+	current_batchID integer not null
+);
+
+ create table projects
+ (
+	id integer not null primary key autoincrement,
+	title varchar(255) not null,
+	records_per_image integer not null,
+	firstycoord integer not null,
+	recordheight integer not null
+	
+ );
+ 
+ create table fields
+ (
+	id integer not null primary key autoincrement,
+	title varchar(255) not null,
+	xcoord integer not null,
+	width integer not null,
+	helphtml varchar(255) not null,
+	knowndata varchar(255),
+	projectID integer not null,
+	fieldnumber integer not null
+ );
+ 
+ create table image
+ (
+	id integer not null primary key autoincrement,
+	file varchar(255) not null,
+	projectID integer not null,
+	checkedout integer,
+	hasrecords integer
+ );
+ 
+ create table indexedData
+ (
+	recordID integer not null primary key autoincrement,
+	data varchar(255),
+	row integer,
+	vertical integer,
+	imageID integer not null,
+	projectID integer
+ );
+
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS image; 
+DROP TABLE IF EXISTS projects; 
+DROP TABLE IF EXISTS fields; 
+DROP TABLE IF EXISTS indexedData; 
+create table users 
+( 
+id integer not null primary key autoincrement, 
+firstName varchar(255) not null, 
+lastName varchar(255) not null, 
+username varchar(255) not null,
+password varchar(255) not null,
+emailaddress varchar(255) not null,
+records_indexed integer not null,
+current_batchID integer not null
+);
+create table projects 
+( 
+id integer not null primary key autoincrement,
+title varchar(255) not null, 
+records_per_image integer not null, 
+firstycoord integer not null, 
+recordheight integer not null
+);
+create table fields 
+( 
+id integer not null primary key autoincrement, 
+title varchar(255) not null, 
+xcoord integer not null,
+width integer not null, 
+helphtml varchar(255) not null, 
+knowndata varchar(255), 
+projectID integer not null, 
+fieldnumber integer not null
+);
+create table image
+( 
+id integer not null primary key autoincrement, 
+file varchar(255) not null, 
+projectID integer not null, 
+checkedout integer, 
+hasrecords integer
+); 
+create table indexedData( recordID integer not null primary key autoincrement, 
+data varchar(255), 
+row integer, 
+vertical integer, 
+imageID integer not null, 
+projectID integer
+);

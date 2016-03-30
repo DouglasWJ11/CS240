@@ -1,0 +1,1319 @@
+<client.UserState>
+  <comm>
+    <SERVER__HOST>localhost</SERVER__HOST>
+    <SERVER__PORT>8080</SERVER__PORT>
+    <URL__PREFIX>http://localhost:8080</URL__PREFIX>
+    <HTTP__GET>GET</HTTP__GET>
+    <HTTP__POST>POST</HTTP__POST>
+    <username>test1</username>
+    <xmlStream>
+      <reflectionProvider class="com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider">
+        <fieldDictionary>
+          <sorter class="com.thoughtworks.xstream.converters.reflection.ImmutableFieldKeySorter"/>
+        </fieldDictionary>
+      </reflectionProvider>
+      <hierarchicalStreamDriver class="com.thoughtworks.xstream.io.xml.DomDriver">
+        <replacer class="com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder">
+          <dollarReplacement>_-</dollarReplacement>
+          <escapeCharReplacement>__</escapeCharReplacement>
+          <hexPrefix>_.</hexPrefix>
+        </replacer>
+        <documentBuilderFactory class="com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl">
+          <validating>false</validating>
+          <namespaceAware>false</namespaceAware>
+          <whitespace>false</whitespace>
+          <expandEntityRef>true</expandEntityRef>
+          <ignoreComments>false</ignoreComments>
+          <coalescing>false</coalescing>
+          <isXIncludeAware>false</isXIncludeAware>
+          <fSecureProcess>true</fSecureProcess>
+        </documentBuilderFactory>
+      </hierarchicalStreamDriver>
+      <classLoaderReference resolves-to="com.thoughtworks.xstream.core.util.ClassLoaderReference$Replacement"/>
+      <marshallingStrategy class="com.thoughtworks.xstream.core.ReferenceByXPathMarshallingStrategy">
+        <mode>0</mode>
+      </marshallingStrategy>
+      <converterLookup class="com.thoughtworks.xstream.core.DefaultConverterLookup">
+        <converters>
+          <set class="sorted-set">
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.basic.NullConverter"/>
+              <priority>10000</priority>
+              <id>4</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.reflection.SelfStreamingInstanceChecker">
+                <self class="com.thoughtworks.xstream.XStream" reference="../../../../../.."/>
+                <defaultConverter class="com.thoughtworks.xstream.converters.reflection.ReflectionConverter">
+                  <reflectionProvider class="com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider" reference="../../../../../../../reflectionProvider"/>
+                  <mapper class="com.thoughtworks.xstream.mapper.CachingMapper">
+                    <wrapped class="com.thoughtworks.xstream.mapper.AnnotationMapper">
+                      <wrapped class="com.thoughtworks.xstream.mapper.ImmutableTypesMapper">
+                        <wrapped class="com.thoughtworks.xstream.mapper.LocalConversionMapper">
+                          <wrapped class="com.thoughtworks.xstream.mapper.EnumMapper">
+                            <wrapped class="com.thoughtworks.xstream.mapper.AttributeMapper">
+                              <wrapped class="com.thoughtworks.xstream.mapper.DefaultImplementationsMapper">
+                                <wrapped class="com.thoughtworks.xstream.mapper.ArrayMapper">
+                                  <wrapped class="com.thoughtworks.xstream.mapper.OuterClassMapper">
+                                    <wrapped class="com.thoughtworks.xstream.mapper.ImplicitCollectionMapper">
+                                      <wrapped class="com.thoughtworks.xstream.mapper.SystemAttributeAliasingMapper">
+                                        <wrapped class="com.thoughtworks.xstream.mapper.AttributeAliasingMapper">
+                                          <wrapped class="com.thoughtworks.xstream.mapper.FieldAliasingMapper">
+                                            <wrapped class="com.thoughtworks.xstream.mapper.ClassAliasingMapper">
+                                              <wrapped class="com.thoughtworks.xstream.mapper.PackageAliasingMapper" serialization="custom">
+                                                <unserializable-parents>
+                                                  <wrapped class="com.thoughtworks.xstream.mapper.DynamicProxyMapper">
+                                                    <wrapped class="com.thoughtworks.xstream.mapper.DefaultMapper">
+                                                      <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../../../../../../../../../../../../../../../../../../../../classLoaderReference"/>
+                                                    </wrapped>
+                                                    <alias>dynamic-proxy</alias>
+                                                  </wrapped>
+                                                </unserializable-parents>
+                                                <com.thoughtworks.xstream.mapper.PackageAliasingMapper>
+                                                  <map/>
+                                                </com.thoughtworks.xstream.mapper.PackageAliasingMapper>
+                                              </wrapped>
+                                              <typeToName>
+                                                <entry>
+                                                  <java-class>java.nio.charset.Charset</java-class>
+                                                  <string>charset</string>
+                                                </entry>
+                                              </typeToName>
+                                              <classToName>
+                                                <entry>
+                                                  <string>java.awt.Color</string>
+                                                  <string>awt-color</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Float</string>
+                                                  <string>float</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.SortedSet</string>
+                                                  <string>sorted-set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.sql.Time</string>
+                                                  <string>sql-time</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Date</string>
+                                                  <string>date</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.net.URL</string>
+                                                  <string>url</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Collections$EmptyMap</string>
+                                                  <string>empty-map</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>com.thoughtworks.xstream.mapper.Mapper$Null</string>
+                                                  <string>null</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Integer</string>
+                                                  <string>int</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.math.BigDecimal</string>
+                                                  <string>big-decimal</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Vector</string>
+                                                  <string>vector</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>javax.xml.datatype.Duration</string>
+                                                  <string>duration</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Character</string>
+                                                  <string>char</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Long</string>
+                                                  <string>long</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Short</string>
+                                                  <string>short</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Locale</string>
+                                                  <string>locale</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Map</string>
+                                                  <string>map</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.math.BigInteger</string>
+                                                  <string>big-int</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.net.URI</string>
+                                                  <string>uri</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Byte</string>
+                                                  <string>byte</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.reflect.Method</string>
+                                                  <string>method</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.EnumSet</string>
+                                                  <string>enum-set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.EnumMap</string>
+                                                  <string>enum-map</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.awt.Font</string>
+                                                  <string>awt-font</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.sql.Timestamp</string>
+                                                  <string>sql-timestamp</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Set</string>
+                                                  <string>set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.UUID</string>
+                                                  <string>uuid</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.List</string>
+                                                  <string>list</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.StringBuilder</string>
+                                                  <string>string-builder</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Collections$EmptySet</string>
+                                                  <string>empty-set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Double</string>
+                                                  <string>double</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.awt.font.TextAttribute</string>
+                                                  <string>awt-text-attribute</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Currency</string>
+                                                  <string>currency</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.reflect.Constructor</string>
+                                                  <string>constructor</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.TreeSet</string>
+                                                  <string>tree-set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.LinkedHashMap</string>
+                                                  <string>linked-hash-map</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Calendar</string>
+                                                  <string>gregorian-calendar</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.StringBuffer</string>
+                                                  <string>string-buffer</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Boolean</string>
+                                                  <string>boolean</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.StackTraceElement</string>
+                                                  <string>trace</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.String</string>
+                                                  <string>string</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Collections$SingletonSet</string>
+                                                  <string>singleton-set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Number</string>
+                                                  <string>number</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.LinkedList</string>
+                                                  <string>linked-list</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Collections$SingletonMap</string>
+                                                  <string>singleton-map</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Hashtable</string>
+                                                  <string>hashtable</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.LinkedHashSet</string>
+                                                  <string>linked-hash-set</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Map$Entry</string>
+                                                  <string>entry</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Properties</string>
+                                                  <string>properties</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.reflect.Field</string>
+                                                  <string>field</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Collections$SingletonList</string>
+                                                  <string>singleton-list</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.io.File</string>
+                                                  <string>file</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>javax.security.auth.Subject</string>
+                                                  <string>auth-subject</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.sql.Date</string>
+                                                  <string>sql-date</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.TreeMap</string>
+                                                  <string>tree-map</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.Collections$EmptyList</string>
+                                                  <string>empty-list</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Object</string>
+                                                  <string>object</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.lang.Class</string>
+                                                  <string>java-class</string>
+                                                </entry>
+                                                <entry>
+                                                  <string>java.util.BitSet</string>
+                                                  <string>bit-set</string>
+                                                </entry>
+                                              </classToName>
+                                            </wrapped>
+                                            <fieldToAliasMap/>
+                                            <aliasToFieldMap/>
+                                            <fieldsToOmit/>
+                                          </wrapped>
+                                          <aliasToName/>
+                                        </wrapped>
+                                        <aliasToName/>
+                                      </wrapped>
+                                      <classNameToMapper/>
+                                    </wrapped>
+                                    <alias>outer-class</alias>
+                                  </wrapped>
+                                </wrapped>
+                                <typeToImpl>
+                                  <entry>
+                                    <java-class>com.thoughtworks.xstream.mapper.Mapper$Null</java-class>
+                                    <null/>
+                                  </entry>
+                                  <entry>
+                                    <java-class>double</java-class>
+                                    <java-class>java.lang.Double</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>java.util.List</java-class>
+                                    <java-class>java.util.ArrayList</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>java.util.SortedSet</java-class>
+                                    <java-class>java.util.TreeSet</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>boolean</java-class>
+                                    <java-class>java.lang.Boolean</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>java.util.Calendar</java-class>
+                                    <java-class>java.util.GregorianCalendar</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>char</java-class>
+                                    <java-class>java.lang.Character</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>float</java-class>
+                                    <java-class>java.lang.Float</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>java.util.Map</java-class>
+                                    <java-class>java.util.HashMap</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>short</java-class>
+                                    <java-class>java.lang.Short</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>long</java-class>
+                                    <java-class>java.lang.Long</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>byte</java-class>
+                                    <java-class>java.lang.Byte</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>int</java-class>
+                                    <java-class>java.lang.Integer</java-class>
+                                  </entry>
+                                  <entry>
+                                    <java-class>java.util.Set</java-class>
+                                    <java-class>java.util.HashSet</java-class>
+                                  </entry>
+                                </typeToImpl>
+                              </wrapped>
+                              <fieldNameToTypeMap/>
+                              <typeSet/>
+                              <converterLookup class="com.thoughtworks.xstream.core.DefaultConverterLookup" reference="../../../../../../../../../../../.."/>
+                              <reflectionProvider class="com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider" reference="../../../../../../../../../../../../../reflectionProvider"/>
+                              <fieldToUseAsAttribute/>
+                            </wrapped>
+                          </wrapped>
+                          <localConverters/>
+                        </wrapped>
+                        <immutableTypes>
+                          <java-class>java.util.Currency</java-class>
+                          <java-class>java.lang.Byte</java-class>
+                          <java-class>java.net.URL</java-class>
+                          <java-class>java.lang.Boolean</java-class>
+                          <java-class>double</java-class>
+                          <java-class>java.util.Collections$EmptyMap</java-class>
+                          <java-class>java.util.Collections$EmptyList</java-class>
+                          <java-class>char</java-class>
+                          <java-class>java.net.URI</java-class>
+                          <java-class>java.awt.font.TextAttribute</java-class>
+                          <java-class>java.nio.charset.Charset</java-class>
+                          <java-class>java.lang.Class</java-class>
+                          <java-class>java.lang.Character</java-class>
+                          <java-class>short</java-class>
+                          <java-class>java.io.File</java-class>
+                          <java-class>long</java-class>
+                          <java-class>java.math.BigDecimal</java-class>
+                          <java-class>java.util.Collections$EmptySet</java-class>
+                          <java-class>java.lang.Float</java-class>
+                          <java-class>com.thoughtworks.xstream.mapper.Mapper$Null</java-class>
+                          <java-class>boolean</java-class>
+                          <java-class>java.math.BigInteger</java-class>
+                          <java-class>float</java-class>
+                          <java-class>java.lang.Long</java-class>
+                          <java-class>java.lang.Short</java-class>
+                          <java-class>java.lang.Double</java-class>
+                          <java-class>java.lang.Integer</java-class>
+                          <java-class>java.lang.String</java-class>
+                          <java-class>byte</java-class>
+                          <java-class>int</java-class>
+                        </immutableTypes>
+                      </wrapped>
+                      <locked>true</locked>
+                      <arguments>
+                        <com.thoughtworks.xstream.mapper.AnnotationMapper reference="../.."/>
+                        <com.thoughtworks.xstream.core.util.ClassLoaderReference reference="../../../../../../../../../../classLoaderReference"/>
+                        <com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider reference="../../../../../../../../../../reflectionProvider"/>
+                        <com.thoughtworks.xstream.core.JVM>
+                          <reflectionProvider class="com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider" reference="../../../../../../../../../../../reflectionProvider"/>
+                          <supportsAWT>true</supportsAWT>
+                          <supportsSwing>true</supportsSwing>
+                          <supportsSQL>true</supportsSQL>
+                        </com.thoughtworks.xstream.core.JVM>
+                        <com.thoughtworks.xstream.core.DefaultConverterLookup reference="../../../../../../../../.."/>
+                      </arguments>
+                      <converterRegistry class="com.thoughtworks.xstream.core.DefaultConverterLookup" reference="../../../../../../../.."/>
+                      <classAliasingMapper reference="../wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+                      <defaultImplementationsMapper reference="../wrapped/wrapped/wrapped/wrapped/wrapped"/>
+                      <implicitCollectionMapper reference="../wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+                      <fieldAliasingMapper reference="../wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+                      <attributeMapper reference="../wrapped/wrapped/wrapped/wrapped"/>
+                      <localConversionMapper reference="../wrapped/wrapped"/>
+                      <converterCache/>
+                      <annotatedTypes>
+                        <java-class>java.lang.Object</java-class>
+                      </annotatedTypes>
+                    </wrapped>
+                  </mapper>
+                </defaultConverter>
+              </value>
+              <priority>0</priority>
+              <id>57</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.UUIDConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>56</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.StringBuilderConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>55</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.enums.EnumMapConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>54</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.enums.EnumSetConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>53</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.enums.EnumConverter"/>
+              <priority>0</priority>
+              <id>52</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.DurationConverter">
+                  <factory class="com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl"/>
+                </wrapped>
+              </value>
+              <priority>0</priority>
+              <id>51</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.CharsetConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>50</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.RegexPatternConverter">
+                <defaultConverter class="com.thoughtworks.xstream.converters.reflection.ReflectionConverter" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>49</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.CurrencyConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>48</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.StackTraceElementConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>47</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.ThrowableConverter">
+                <defaultConverter class="com.thoughtworks.xstream.converters.reflection.ReflectionConverter" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>46</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.SubjectConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>45</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.GregorianCalendarConverter"/>
+              <priority>0</priority>
+              <id>44</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.LocaleConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>43</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.LookAndFeelConverter">
+                <reflectionProvider class="com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider" reference="../../../../../../reflectionProvider"/>
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>42</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.TextAttributeConverter">
+                  <type>java.awt.font.TextAttribute</type>
+                </wrapped>
+              </value>
+              <priority>0</priority>
+              <id>41</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.ColorConverter"/>
+              <priority>0</priority>
+              <id>40</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.FontConverter"/>
+              <priority>0</priority>
+              <id>39</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.JavaFieldConverter">
+                <javaClassConverter class="com.thoughtworks.xstream.converters.extended.JavaClassConverter">
+                  <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../../classLoaderReference"/>
+                </javaClassConverter>
+              </value>
+              <priority>0</priority>
+              <id>38</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.JavaMethodConverter">
+                <javaClassConverter class="com.thoughtworks.xstream.converters.extended.JavaClassConverter">
+                  <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../../classLoaderReference"/>
+                </javaClassConverter>
+              </value>
+              <priority>0</priority>
+              <id>37</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.JavaClassConverter">
+                  <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../../classLoaderReference"/>
+                </wrapped>
+              </value>
+              <priority>0</priority>
+              <id>36</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.DynamicProxyConverter">
+                <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../classLoaderReference"/>
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>35</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.SqlDateConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>34</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.SqlTimeConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>33</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.SqlTimestampConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>32</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.extended.FileConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>31</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.extended.EncodedByteArrayConverter"/>
+              <priority>0</priority>
+              <id>30</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.PropertiesConverter">
+                <sort>false</sort>
+              </value>
+              <priority>0</priority>
+              <id>29</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.SingletonMapConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>28</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.SingletonCollectionConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>27</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.TreeSetConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>26</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.TreeMapConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>25</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.MapConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>24</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.CollectionConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>23</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.CharArrayConverter"/>
+              <priority>0</priority>
+              <id>22</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.ArrayConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+              </value>
+              <priority>0</priority>
+              <id>21</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.BigDecimalConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>20</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.BigIntegerConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>19</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.URLConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>18</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.URIConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>17</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.collections.BitSetConverter"/>
+              <priority>0</priority>
+              <id>16</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.DateConverter">
+                  <defaultFormat>
+                    <formatString>yyyy-MM-dd HH:mm:ss.S z</formatString>
+                    <pool>
+                      <initialPoolSize>4</initialPoolSize>
+                      <maxPoolSize>20</maxPoolSize>
+                      <factory class="com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat$1">
+                        <val_-lenient>false</val_-lenient>
+                        <outer-class reference="../../.."/>
+                      </factory>
+                    </pool>
+                    <timeZone class="sun.util.calendar.ZoneInfo" serialization="custom">
+                      <java.util.TimeZone>
+                        <default>
+                          <ID>UTC</ID>
+                        </default>
+                      </java.util.TimeZone>
+                      <sun.util.calendar.ZoneInfo>
+                        <default>
+                          <checksum>0</checksum>
+                          <dstSavings>0</dstSavings>
+                          <rawOffset>0</rawOffset>
+                          <rawOffsetDiff>0</rawOffsetDiff>
+                          <willGMTOffsetChange>false</willGMTOffsetChange>
+                        </default>
+                      </sun.util.calendar.ZoneInfo>
+                    </timeZone>
+                  </defaultFormat>
+                  <acceptableFormats>
+                    <com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                      <formatString>yyyy-MM-dd HH:mm:ss.S a</formatString>
+                      <pool>
+                        <initialPoolSize>1</initialPoolSize>
+                        <maxPoolSize>20</maxPoolSize>
+                        <factory class="com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat$1">
+                          <val_-lenient>false</val_-lenient>
+                          <outer-class reference="../../.."/>
+                        </factory>
+                      </pool>
+                      <timeZone class="sun.util.calendar.ZoneInfo" reference="../../../defaultFormat/timeZone"/>
+                    </com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                    <com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                      <formatString>yyyy-MM-dd HH:mm:ssz</formatString>
+                      <pool>
+                        <initialPoolSize>1</initialPoolSize>
+                        <maxPoolSize>20</maxPoolSize>
+                        <factory class="com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat$1">
+                          <val_-lenient>false</val_-lenient>
+                          <outer-class reference="../../.."/>
+                        </factory>
+                      </pool>
+                      <timeZone class="sun.util.calendar.ZoneInfo" reference="../../../defaultFormat/timeZone"/>
+                    </com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                    <com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                      <formatString>yyyy-MM-dd HH:mm:ss z</formatString>
+                      <pool>
+                        <initialPoolSize>1</initialPoolSize>
+                        <maxPoolSize>20</maxPoolSize>
+                        <factory class="com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat$1">
+                          <val_-lenient>false</val_-lenient>
+                          <outer-class reference="../../.."/>
+                        </factory>
+                      </pool>
+                      <timeZone class="sun.util.calendar.ZoneInfo" reference="../../../defaultFormat/timeZone"/>
+                    </com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                    <com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                      <formatString>yyyy-MM-dd HH:mm:ssa</formatString>
+                      <pool>
+                        <initialPoolSize>1</initialPoolSize>
+                        <maxPoolSize>20</maxPoolSize>
+                        <factory class="com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat$1">
+                          <val_-lenient>false</val_-lenient>
+                          <outer-class reference="../../.."/>
+                        </factory>
+                      </pool>
+                      <timeZone class="sun.util.calendar.ZoneInfo" reference="../../../defaultFormat/timeZone"/>
+                    </com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat>
+                  </acceptableFormats>
+                </wrapped>
+              </value>
+              <priority>0</priority>
+              <id>15</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.StringBufferConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>14</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.StringConverter">
+                  <cache class="java.util.Collections$SynchronizedMap" serialization="custom">
+                    <java.util.Collections_-SynchronizedMap>
+                      <default>
+                        <m class="com.thoughtworks.xstream.core.util.WeakCache">
+                          <map class="java.util.WeakHashMap">
+                            <table>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">fieldhelp/gender.html</referent>
+                                <queue>
+                                  <lock/>
+                                  <head class="java.util.WeakHashMap$Entry">
+                                    <queue class="java.lang.ref.ReferenceQueue$Null">
+                                      <lock/>
+                                      <queueLength>0</queueLength>
+                                    </queue>
+                                    <next class="java.util.WeakHashMap$Entry" defined-in="java.lang.ref.Reference">
+                                      <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../queue"/>
+                                      <next class="java.util.WeakHashMap$Entry" defined-in="java.lang.ref.Reference">
+                                        <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../queue"/>
+                                        <next class="java.util.WeakHashMap$Entry" defined-in="java.lang.ref.Reference">
+                                          <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../../queue"/>
+                                          <next class="java.util.WeakHashMap$Entry" defined-in="java.lang.ref.Reference">
+                                            <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../../../queue"/>
+                                            <next class="java.util.WeakHashMap$Entry" defined-in="java.lang.ref.Reference">
+                                              <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../../../../queue"/>
+                                              <next class="java.util.WeakHashMap$Entry" defined-in="java.lang.ref.Reference" reference=".."/>
+                                              <value class="java.lang.ref.WeakReference">
+                                                <queue class="java.lang.ref.ReferenceQueue$Null">
+                                                  <lock/>
+                                                  <queueLength>0</queueLength>
+                                                </queue>
+                                                <next class="java.lang.ref.WeakReference" reference=".."/>
+                                              </value>
+                                              <hash>2076297441</hash>
+                                            </next>
+                                            <value class="java.lang.ref.WeakReference">
+                                              <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../next/value/queue"/>
+                                              <next class="java.lang.ref.WeakReference" reference=".."/>
+                                            </value>
+                                            <hash>1166298469</hash>
+                                          </next>
+                                          <value class="java.lang.ref.WeakReference">
+                                            <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../next/next/value/queue"/>
+                                            <next class="java.lang.ref.WeakReference" reference=".."/>
+                                          </value>
+                                          <hash>1130108133</hash>
+                                          <next reference="../next"/>
+                                        </next>
+                                        <value class="java.lang.ref.WeakReference">
+                                          <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../next/next/next/value/queue"/>
+                                          <next class="java.lang.ref.WeakReference" reference=".."/>
+                                        </value>
+                                        <hash>1029392680</hash>
+                                      </next>
+                                      <value class="java.lang.ref.WeakReference">
+                                        <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../next/next/next/next/value/queue"/>
+                                        <next class="java.lang.ref.WeakReference" reference=".."/>
+                                      </value>
+                                      <hash>-478690675</hash>
+                                    </next>
+                                    <value class="java.lang.ref.WeakReference">
+                                      <queue class="java.lang.ref.ReferenceQueue$Null">
+                                        <lock/>
+                                        <queueLength>0</queueLength>
+                                      </queue>
+                                      <next class="java.lang.ref.WeakReference" reference=".."/>
+                                    </value>
+                                    <hash>1415967261</hash>
+                                  </head>
+                                  <queueLength>6</queueLength>
+                                </queue>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">fieldhelp/gender.html</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null">
+                                    <lock/>
+                                    <queueLength>0</queueLength>
+                                  </queue>
+                                </value>
+                                <hash>-91017888</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <java.util.WeakHashMap_-Entry reference="../java.util.WeakHashMap_-Entry/queue/head/next/next/next/next/next"/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">Age</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">Age</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>70338</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry reference="../java.util.WeakHashMap_-Entry/queue/head/next/next/next"/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">fieldhelp/age.html</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">fieldhelp/age.html</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>-1088411450</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry reference="../java.util.WeakHashMap_-Entry/queue/head/next/next"/>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">knowndata/1890_last_names.txt</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">knowndata/1890_last_names.txt</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/queue/head/value/queue"/>
+                                </value>
+                                <hash>-2019155382</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry reference="../java.util.WeakHashMap_-Entry/queue/head/next"/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">knowndata/genders.txt</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">knowndata/genders.txt</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>-1890807282</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">fieldhelp/last_name.html</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">fieldhelp/last_name.html</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>-2096256047</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <null/>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">1900 Census</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">1900 Census</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/queue/head/next/next/next/next/next/value/queue"/>
+                                </value>
+                                <hash>1149772181</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">Gender</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">Gender</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>2046705335</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">Draft Records</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">Draft Records</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null">
+                                    <lock/>
+                                    <queueLength>0</queueLength>
+                                  </queue>
+                                </value>
+                                <hash>1400386393</hash>
+                                <next>
+                                  <referent class="string">1890 Census</referent>
+                                  <queue reference="../../../java.util.WeakHashMap_-Entry/queue"/>
+                                  <value class="java.lang.ref.WeakReference">
+                                    <referent class="string">1890 Census</referent>
+                                    <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../value/queue"/>
+                                  </value>
+                                  <hash>-1962579751</hash>
+                                </next>
+                              </java.util.WeakHashMap_-Entry>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">knowndata/1890_first_names.txt</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">knowndata/1890_first_names.txt</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/queue/head/value/queue"/>
+                                </value>
+                                <hash>1509787706</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <null/>
+                              <null/>
+                              <java.util.WeakHashMap_-Entry reference="../java.util.WeakHashMap_-Entry/queue/head"/>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">Last Name</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">Last Name</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>-460417730</hash>
+                              </java.util.WeakHashMap_-Entry>
+                              <java.util.WeakHashMap_-Entry>
+                                <referent class="string">First Name</referent>
+                                <queue reference="../../java.util.WeakHashMap_-Entry/queue"/>
+                                <value class="java.lang.ref.WeakReference">
+                                  <referent class="string">First Name</referent>
+                                  <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                </value>
+                                <hash>1878898751</hash>
+                                <next>
+                                  <referent class="string">fieldhelp/first_name.html</referent>
+                                  <queue reference="../../../java.util.WeakHashMap_-Entry/queue"/>
+                                  <value class="java.lang.ref.WeakReference">
+                                    <referent class="string">fieldhelp/first_name.html</referent>
+                                    <queue class="java.lang.ref.ReferenceQueue$Null" reference="../../../../java.util.WeakHashMap_-Entry/value/queue"/>
+                                  </value>
+                                  <hash>1585358879</hash>
+                                </next>
+                              </java.util.WeakHashMap_-Entry>
+                            </table>
+                            <size>20</size>
+                            <threshold>24</threshold>
+                            <loadFactor>0.75</loadFactor>
+                            <queue reference="../table/java.util.WeakHashMap_-Entry/queue"/>
+                            <modCount>43</modCount>
+                          </map>
+                        </m>
+                        <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+                      </default>
+                    </java.util.Collections_-SynchronizedMap>
+                  </cache>
+                  <lengthLimit>38</lengthLimit>
+                </wrapped>
+              </value>
+              <priority>0</priority>
+              <id>13</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.ByteConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>12</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.BooleanConverter">
+                  <positive>true</positive>
+                  <negative>false</negative>
+                  <caseSensitive>false</caseSensitive>
+                </wrapped>
+              </value>
+              <priority>0</priority>
+              <id>11</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.basic.CharConverter"/>
+              <priority>0</priority>
+              <id>10</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.ShortConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>9</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.LongConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>8</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.DoubleConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>7</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.FloatConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>6</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.SingleValueConverterWrapper">
+                <wrapped class="com.thoughtworks.xstream.converters.basic.IntConverter"/>
+              </value>
+              <priority>0</priority>
+              <id>5</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.reflection.ExternalizableConverter">
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+                <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../classLoaderReference"/>
+              </value>
+              <priority>-10</priority>
+              <id>3</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.reflection.SerializableConverter">
+                <reflectionProvider class="com.thoughtworks.xstream.converters.reflection.SerializableConverter$UnserializableParentsReflectionProvider">
+                  <wrapped class="com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider" reference="../../../../../../../reflectionProvider"/>
+                </reflectionProvider>
+                <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+                <classLoader class="com.thoughtworks.xstream.core.util.ClassLoaderReference" reference="../../../../../../classLoaderReference"/>
+              </value>
+              <priority>-10</priority>
+              <id>2</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+            <com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+              <value class="com.thoughtworks.xstream.converters.reflection.ReflectionConverter" reference="../../com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter"/>
+              <priority>-20</priority>
+              <id>1</id>
+            </com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem>
+          </set>
+          <lowestPriority>-20</lowestPriority>
+          <lastId>57</lastId>
+        </converters>
+      </converterLookup>
+      <converterRegistry class="com.thoughtworks.xstream.core.DefaultConverterLookup" reference="../converterLookup"/>
+      <mapper class="com.thoughtworks.xstream.mapper.CachingMapper" reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper"/>
+      <packageAliasingMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <classAliasingMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <fieldAliasingMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <attributeAliasingMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <systemAttributeAliasingMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <attributeMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <defaultImplementationsMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <immutableTypesMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped"/>
+      <implicitCollectionMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped/wrapped"/>
+      <localConversionMapper reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped/wrapped/wrapped"/>
+      <annotationConfiguration class="com.thoughtworks.xstream.mapper.AnnotationMapper" reference="../converterLookup/converters/set/com.thoughtworks.xstream.core.util.PrioritizedList_-PrioritizedItem[2]/value/defaultConverter/mapper/wrapped"/>
+    </xmlStream>
+  </comm>
+  <highlights>true</highlights>
+  <inverted>true</inverted>
+  <winXPosition>-10000</winXPosition>
+  <winYPosition>-10000</winYPosition>
+  <windowSize>0</windowSize>
+  <xSplit>545</xSplit>
+  <ySplit>354</ySplit>
+  <zoomLevel>0</zoomLevel>
+  <projectID>0</projectID>
+  <batchID>5</batchID>
+  <xSelectedCell>2</xSelectedCell>
+  <ySelectedCell>1</ySelectedCell>
+  <xImagePos>-76</xImagePos>
+  <yImagePos>-194</yImagePos>
+  <windowWidth>928</windowWidth>
+  <windowHeight>709</windowHeight>
+  <scale>0.5</scale>
+  <xStart>0.0</xStart>
+  <yStart>0.0</yStart>
+  <xEnd>0.0</xEnd>
+  <yEnd>0.0</yEnd>
+  <tableEntry>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+    <object-array>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+      <null/>
+    </object-array>
+  </tableEntry>
+  <project>
+    <ID>1</ID>
+    <title>1890 Census</title>
+    <recordsperimage>8</recordsperimage>
+    <firstycoord>199</firstycoord>
+    <recordheight>60</recordheight>
+    <fields>
+      <shared.model.fields>
+        <ID>1</ID>
+        <fieldnumber>1</fieldnumber>
+        <title>Last Name</title>
+        <xcoord>60</xcoord>
+        <width>300</width>
+        <helphtml>fieldhelp/last_name.html</helphtml>
+        <knownData>knowndata/1890_last_names.txt</knownData>
+        <ProjectID>1</ProjectID>
+      </shared.model.fields>
+      <shared.model.fields>
+        <ID>2</ID>
+        <fieldnumber>2</fieldnumber>
+        <title>First Name</title>
+        <xcoord>360</xcoord>
+        <width>280</width>
+        <helphtml>fieldhelp/first_name.html</helphtml>
+        <knownData>knowndata/1890_first_names.txt</knownData>
+        <ProjectID>1</ProjectID>
+      </shared.model.fields>
+      <shared.model.fields>
+        <ID>3</ID>
+        <fieldnumber>3</fieldnumber>
+        <title>Gender</title>
+        <xcoord>640</xcoord>
+        <width>205</width>
+        <helphtml>fieldhelp/gender.html</helphtml>
+        <knownData>knowndata/genders.txt</knownData>
+        <ProjectID>1</ProjectID>
+      </shared.model.fields>
+      <shared.model.fields>
+        <ID>4</ID>
+        <fieldnumber>4</fieldnumber>
+        <title>Age</title>
+        <xcoord>845</xcoord>
+        <width>120</width>
+        <helphtml>fieldhelp/age.html</helphtml>
+        <ProjectID>1</ProjectID>
+      </shared.model.fields>
+    </fields>
+    <images/>
+  </project>
+  <url>http://localhost:8080/images/1890_image4.png</url>
+  <windowlocation>
+    <x>227</x>
+    <y>20</y>
+  </windowlocation>
+</client.UserState>
